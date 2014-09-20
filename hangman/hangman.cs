@@ -12,7 +12,7 @@ namespace Hangman
     public class Hangman
     {
         public bool Active { get; private set; }
-        public Settings settings { get; private set; }
+        private Settings settings { get; set; }
 
         public Hangman()
         {
@@ -153,7 +153,7 @@ namespace Hangman
 
     }
 
-    private class Settings
+    public class Settings
     {
         public string Word { get; set; }
         public string Hashedword { get; set; }
