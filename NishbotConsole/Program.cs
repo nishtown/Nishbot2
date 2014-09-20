@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nishbot;
+using Nish.Client;
 
 namespace NishbotConsole
 {
     class Program
     {
-        private static Dictionary<string, Nishbot.Nishbot> ircbot = new Dictionary<string, Nishbot.Nishbot>();
-
-
+        private static Dictionary<string, Nishbot> ircbot = new Dictionary<string, Nishbot>();
+        
         static void Main(string[] args)
         {
             bool bRunning = true;
@@ -57,7 +56,7 @@ namespace NishbotConsole
                             serverident = serverident + i;
                             i++;
                         }
-                        Nishbot.Nishbot irc = new Nishbot.Nishbot();
+                        Nishbot irc = new Nishbot();
 
 
 
